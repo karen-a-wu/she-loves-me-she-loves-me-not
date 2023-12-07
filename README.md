@@ -17,10 +17,17 @@
 <b>Ranges: </b> <br>
 If RT ≤ 6 hours: Score = 1 (high interest)<br>
 If 6 hours < RT ≤ 8 hours: Score is scaled linearly between 1 and 0.5. <br>
-If RT > 8 hours: Score = 0 (low interest).<br></p>
-<h3>Initiation Frequency (IF)</h3>
-<p>Indicates how often she initiates conversation.<br>
-<b>Formula:</b>  Number of initiated conversations by her / Total number of conversations<br>
-<b>Range: </b>0 (never) to 1 (always)</p>
-
+If RT > 8 hours: Score = 0 (low interest)<br></p>
+<h3>Interest in Meeting Up (IM)</h3>
+<p>Binary parameter indicating if she shows explicit intent to meet up (1 for yes, 0 for no).</p>
+<h3>Conversational Balance Score (CS)</h3>
+<p>The app will ask you to rate the balance and mutual enthusiasm in the conversations on a scale of 1-5.<br>
+<b>Range: </b>1 (lowest balance and mutual enthusiasm - conversations are heavily one-sided or lacking in engagement) to 5 (highest balance and mutual enthusiasm - the conversation consistently exhibits equal engagement and interest from both parties)</p>
+<h3>Response Length (RL)</h3>
+<p>Average length of her messages.<br>
+<b>Formula:</b> Sum of the length of messages / Number of messages<br>
+<h3>Overall Interest Score (OIS)</h3>
+<p>A summative assessment of her interest in you.<br>
+<b>Formula:</b> (TS + IF + RT + IM + Normalized CS) / 5, where Normalized CS = (CS - 1) / 4<br>
+<b>Range: </b>0 to 1 (higher score indicates higher interest)</p>
 
