@@ -30,4 +30,6 @@ If RT > 8 hours: Score = 0 (low interest)<br></p>
 <p>A summative assessment of her interest in you.<br>
 <b>Formula:</b> (TS + IF + RT + IM + Normalized CS) / 5, where Normalized CS = (CS - 1) / 4<br>
 <b>Range: </b>0 to 1 (higher score indicates higher interest)</p>
-
+<h2>Determining Fluctuation in Interest</h2>
+<p>I also wanted to include whether her interest in you is increasing or decreasing.<br>
+<h3>Change in Response Time (ΔRT)</h3>
